@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ps4 & 5 information</title>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<script>
+    $(document).ready(function () {
+    $(window).scroll(function () {
+        if (this.scrollY > 20)
+            $(".navbar").addClass("sticky");
+        else
+            $(".navbar").removeClass("sticky");
+    });
+    $(".menu-toggler").click(function (){
+        $(this).toggleClass("active");
+        $(".navbar-menu").toggleClass("active");
+    });
+});
+</script>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="inner-width">
+        <a href="/" class="logo"></a>
+        <button class="menu-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-menu">
+            <a href="#">홈</a>
+            <a href="#">뉴스</a>
+            <a href="#">타이틀&가격정보</a>
+            <a href="#">메타점수</a>
+            <a href="#">구매처</a>
+        </div>
+    </div>
+</nav>
+<!-- 홈 -->
+<section id="홈">
+    <div class="inner-width">
+        <div class="content">
+            <h1>Welcome</h1>
+            <div class="sm">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-youtube"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 뉴스 -->
+<section id="뉴스" class="dark">
+    <div class="inner-width">
+        <h1 class="section-title">뉴스</h1>
+        <div class="news_1">
+            <div class="news"></div>
+        <i class="icon fas fa-newspaper"></i>
+        <h4>뉴스</h4>
+        <p>뉴스탭 테스트</p>
+        </div>
+
+     <div class="news_1">
+            <div class="news"></div>
+        <i class="icon fas fa-newspaper"></i>
+        <h4>뉴스</h4>
+        <p>뉴스탭 테스트</p>
+        </div>
+
+     <div class="news_1">
+            <div class="news"></div>
+        <i class="icon fas fa-newspaper"></i>
+        <h4>뉴스</h4>
+        <p>뉴스탭 테스트</p>
+        </div>
+
+     <div class="news_1">
+            <div class="news"></div>
+        <i class="icon fas fa-newspaper"></i>
+        <h4>뉴스</h4>
+        <p>뉴스탭 테스트</p>
+        </div>
+
+     <div class="news_1">
+            <div class="news"></div>
+        <i class="icon fas fa-newspaper"></i>
+        <h4>뉴스</h4>
+        <p>뉴스탭 테스트</p>
+        </div>
+
+     <div class="news_1">
+            <div class="news"></div>
+        <i class="icon fas fa-newspaper"></i>
+        <h4>뉴스</h4>
+        <p>뉴스탭 테스트</p>
+        </div>
+    </div>
+
+</section>
+
+
+</body>
+</html>
